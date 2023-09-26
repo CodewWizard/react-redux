@@ -13,6 +13,18 @@ const counteReducer =(state={counter:0}, action)=>{
         }
     }
 
+    if(action.type === 'increase'){
+        return{
+            counter : state.counter + action.amount
+        }
+    }
+
+    if(action.type === 'reset'){
+        return{
+            counter : 0
+        }
+    }
+
     return state;
 }
 
