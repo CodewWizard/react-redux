@@ -16,7 +16,7 @@ const Counter = () => {
   }
 
   const increaseHandler =()=>{
-    dispatch(counterActions.increase(5)) // { type: SOME_UNIQUE_IDENTIFIER, payload: 10 }
+    dispatch(counterActions.increase(5)) // { type: SOME_UNIQUE_IDENTIFIER, payload: 5 }
   }
 
   const resetHandler =()=>{
